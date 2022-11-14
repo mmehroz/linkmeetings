@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'title'                             => 'Site Settings',
+    'site_title'                        => 'Site Title',
+    'site_email'                        => 'Site Email',
+    'site_phone'                        => 'Site Phone',
+    'logo_image'                        => 'Logo Image',
+    'social_media_status'               => 'Social Media Status',
+    'social_media_status_active'        => 'Active',
+    'social_media_status_inactive'      => 'Inactive',
+    'facebook'                          => 'Facebook',
+    'twitter'                           => 'Twitter',
+    'linkedin'                          => 'LinkedIn',
+    'youtube'                           => 'YouTube',
+    'instagram'                         => 'Instagram',
+    'google_plus'                       => 'Google Plus',
+    'pinterest'                         => 'Pinterest',
+    'company_address'                   => 'Company Address',
+    'google_analytics'                  => 'Google Analytics',
+    'copyright'                         => 'Copyright Text',
+    'cancel'                            => 'Cancel',
+    'update_information'                => 'Update Information',
+    'success'                           => 'Site Settings Updated!',
+];

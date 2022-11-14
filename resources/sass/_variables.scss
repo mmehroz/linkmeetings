@@ -1,0 +1,62 @@
+
+// Body
+$body-bg: #f8fafc;
+// Typography
+$font-family-muli: 'Muli';
+$font-family-gil: 'Gilmer';
+$font-size-base: 16; // Default
+
+@function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+// Colors
+$blue: #400099;
+$dark-text: #1d2129;
+$text: #858585;
+$bg: #eff1f5;
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin box-shadow($xofset, $yofset, $blur, $spread, $color) {
+	-webkit-box-shadow: $xofset $yofset $blur $spread $color;
+	-moz-box-shadow: $xofset $yofset $blur $spread $color;
+	box-shadow: $xofset $yofset $blur $spread $color;
+}
+
+
+@mixin transition($property, $duration, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+
